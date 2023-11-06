@@ -1,4 +1,3 @@
-import {BillboardColumn} from "@/app/(dashboard)/[storeId]/(routes)/billboards/components/columns";
 import React, {useState} from "react";
 import {
     DropdownMenu,
@@ -13,9 +12,10 @@ import {toast} from "react-hot-toast";
 import {useParams, useRouter} from "next/navigation";
 import axios from "axios";
 import {AlertModal} from "@/components/modals/alert-modal";
+import {SizeColumn} from "@/app/(dashboard)/[storeId]/(routes)/sizes/components/columns";
 
 interface CellActionProps {
-    data: BillboardColumn
+    data: SizeColumn
 }
 
 export const CellAction: React.FC<CellActionProps> = ({data}) => {
