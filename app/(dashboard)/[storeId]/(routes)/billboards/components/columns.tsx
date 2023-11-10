@@ -7,7 +7,7 @@ import {CellAction} from "@/app/(dashboard)/[storeId]/(routes)/billboards/compon
 // You can use a Zod schema here if you want.
 export type BillboardColumn = {
     id: string
-    label: number
+    label: string
     createdAt: string
 }
 
