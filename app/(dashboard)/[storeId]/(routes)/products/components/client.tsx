@@ -6,7 +6,7 @@ import {useParams, useRouter} from "next/navigation";
 import {Button} from "@/components/ui/button";
 import {Heading} from "@/components/ui/heading";
 import React from "react";
-import {ProductColumn, columns} from "@/app/(dashboard)/[storeId]/(routes)/products/components/columns";
+import {columns, ProductColumn} from "@/app/(dashboard)/[storeId]/(routes)/products/components/columns";
 import {Separator} from "@/components/ui/separator";
 import {DataTable} from "@/components/ui/data-table";
 import {ApiList} from "@/components/ui/api-list";
@@ -15,7 +15,7 @@ interface ProductClientProps {
     data: ProductColumn[]
 }
 
-export const ProductClient: React.FC<ProductClientProps> = ({data}) => {
+export const ProductsClient: React.FC<ProductClientProps> = ({data}) => {
     const params = useParams();
     const router = useRouter();
 
