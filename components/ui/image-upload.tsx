@@ -14,7 +14,12 @@ interface ImageUploadProps {
     value: string[];
 }
 
-const ImageUpload: React.FC<ImageUploadProps> = ({disabled, onChange, onRemove, value}) => {
+const ImageUpload: React.FC<ImageUploadProps> = ({
+                                                     disabled,
+                                                     onChange,
+                                                     onRemove,
+                                                     value
+                                                 }) => {
     const [isMounted, setIsMounted] = useState(false);
 
     useEffect(() => {
